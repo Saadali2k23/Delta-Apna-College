@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Lec9</title>
+</head>
+
+<body>
+    <form action="backend.php">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <br>
+
+        <div>
+            <label for="sex">Sex:</label>
+            <input type="radio" name="sex" id="male" value="m">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="m">
+            <label for="female">Female</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">Select an option</option>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="msg">Message</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="sub" id="sub">
+            <label for="sub">Subscribe?</label>
+        </div>
+        <br>
+
+        <button>Submit</button>
+        <!-- link -> backend.php?name=Pulkit&sex=m&country=India&msg=This+is+my+message&sub=on -->
+    </form>
+</body>
+
+</html>
