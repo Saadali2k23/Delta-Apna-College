@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Question - 9 [ Lec-9 ]</title>
+</head>
+
+<body>
+
+    <!-- Practise Question 9 -->
+    <!-- 
+            Recreate the following form with suitable elements and input types   
+    -->
+
+    <form action="backend.php">
+        <h3>Registration form</h3>
+        <div>
+            <input type="text" name="fn" id="fn" placeholder="First Name">
+            <input type="text" name="ln" id="ln" placeholder="Last Name">
+        </div>
+
+        <div>
+            <label for="gn"> Please select your gender </label>
+            <select name="gender" id="gn">
+                <option value="">--Select--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            Do you agree to all the terms of service
+            <input type="checkbox" name="agreed" id="agreed" value="yes" checked>
+            <label for="agreed">Yes , I agree</label>
+        </div>
+
+        <button>Register</button>
+        <!-- link -> backend.php?fn=Pulkit&ln=xm&gender=Male&agreed=yes -->
+    </form> 
+
+   
+</body>
+
+</html>
