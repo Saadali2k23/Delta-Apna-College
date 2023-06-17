@@ -39,3 +39,8 @@ p + h3{
 .upvote-btn + button {
     background-color: cornflowerblue;
 }
+
+/* child comibnator */
+div > input {
+    background-color: darksalmon;
+}
