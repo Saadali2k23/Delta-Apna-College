@@ -7,3 +7,14 @@ h3,
 h1 {
     color: #b92b27;
 }
+
+
+#login-btn{
+    background-color: #fff;
+}
+
+
+#signup-btn {
+    background-color: #b92b27;
+    color: #fff;
+}
