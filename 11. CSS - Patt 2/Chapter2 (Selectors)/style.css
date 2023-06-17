@@ -1,4 +1,9 @@
 * {
     font-family: "Courier New";
-    background-color: blue;    
+    /* background-color: blue;     */
+}
+
+h3,
+h1 {
+    color: #b92b27;
 }
