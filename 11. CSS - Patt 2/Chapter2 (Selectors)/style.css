@@ -22,3 +22,13 @@ h1 {
 .upvote-btn{
     background-color: green;
 }
+
+/* descendant selector */
+.posts a { /* selects all the a in p tag */ 
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a {
+    color: hotpink;
+}
