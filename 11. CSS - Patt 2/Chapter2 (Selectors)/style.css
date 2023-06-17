@@ -28,7 +28,14 @@ h1 {
     color: purple;
     background-color: yellow;
 }
-
 nav ul li a {
     color: hotpink;
+}
+
+/* sibling combinator */
+p + h3{
+    text-decoration: underline;
+}
+.upvote-btn + button {
+    background-color: cornflowerblue;
 }
