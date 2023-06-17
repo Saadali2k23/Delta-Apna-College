@@ -55,3 +55,11 @@ input[type = "password"] {
 input[type] {
     background-color: ghostwhite;
 }
+
+/* div[id='myid'] > p{ */
+/* div#myid > p{ */
+#myid > p{
+    color: green;
+}
+
+/* pseudo  */
