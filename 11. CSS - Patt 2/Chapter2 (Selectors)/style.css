@@ -62,4 +62,27 @@ input[type] {
     color: green;
 }
 
-/* pseudo  */
+/* pseudo selectors */
+
+/* hover */
+button:hover{
+    color: white;
+    background-color: #000;
+}
+h3:hover{
+    text-decoration: overline;
+}
+
+/* active */
+button:active{
+    background-color: hotpink;
+    color: #000;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+input[type='radio']:checked + label{
+    color: red;
+    font-weight: bold;
+}
