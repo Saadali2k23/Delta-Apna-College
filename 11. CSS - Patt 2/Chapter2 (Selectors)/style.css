@@ -44,3 +44,14 @@ p + h3{
 div > input {
     background-color: darksalmon;
 }
+
+/* attribute selector */
+input[type = "text"] {
+    color: red;
+}
+input[type = "password"] {
+    color: green;
+}
+input[type] {
+    background-color: ghostwhite;
+}
