@@ -1,0 +1,13 @@
+div {
+    background-color: yellow;
+}
+form {
+    background-color: red;
+}
+/* buttons and input do not inherit the properties so to make them inherit we use "inherit" */
+input ,button {
+    background-color: inherit;
+}
+button:hover{
+    background-color: blue;
+}
