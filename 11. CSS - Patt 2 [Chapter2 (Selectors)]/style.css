@@ -90,4 +90,5 @@ input[type='radio']:checked + label{
 /* nth-of-type */
 div:nth-of-type(2n){
     background-color: blanchedalmond;
-}
+}\
+' 
