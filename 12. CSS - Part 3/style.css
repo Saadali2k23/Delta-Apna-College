@@ -5,7 +5,8 @@ div {
     /* border-width: 5px;
     border-style: solid;
     border-color: black; */
-    border: 2px solid black;
+    border: 5px solid black;
+    border-radius: 50px;
 }
 
 h1{
