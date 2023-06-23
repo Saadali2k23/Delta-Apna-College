@@ -53,3 +53,7 @@ div:nth-of-type(2n){
 #one{
     transform: rotate(-90deg);
 }
+
+#two{
+    transform: scale(.5,3);
+}
