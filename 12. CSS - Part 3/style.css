@@ -1,12 +1,6 @@
-#outer {
-    height: 300px;
-    width: 400px;
-    border: solid 2px black;
-    margin: 50px;
+section{
+    font-size: 15px;
 }
-#inner {
-    height: 100px;
-    width: 100px;
-    border: solid 2px black;
-    margin: 10%;
+div{
+    font-size: 3em;
 }
