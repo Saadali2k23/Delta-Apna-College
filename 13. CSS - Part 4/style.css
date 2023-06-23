@@ -77,4 +77,9 @@ div {
     background-color: #7aa874;
     margin: 10px auto;
     box-shadow: 5px 5px 30px black;
+    background: url('./bg.jpg');
+    background-size: contain;
+    background-size: auto;
+    background-size: cover;
+    color: white;
 }
