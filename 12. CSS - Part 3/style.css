@@ -1,20 +1,12 @@
-div {
-    height: 200px;
-    width: 500px;
-    background: pink;
-    /* border-width: 5px;
-    border-style: solid;
-    border-color: black; */
-    border: 5px solid black;
-    border-radius: 50px;
-    padding-top: 10px;
-    margin: 20px 30px 40px 50px;
+#outer {
+    height: 300px;
+    width: 400px;
+    border: solid 2px black;
+    margin: 50px;
 }
-
-h1{
-    border-width: 5px;
-    border-style: dashed;
-    padding: 0 30px 0 30px;    
-    border-color: green;
-    margin: 0;
+#inner {
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    margin: 10%;
 }
