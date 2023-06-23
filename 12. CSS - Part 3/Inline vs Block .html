@@ -6,17 +6,21 @@
     <title>Document</title>
     <style>
         div{
-            display: inline;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 5px;
+            border: 2px solid black;
+            display: inline-block;
         }
-        span{
-            display: block;
+        div:nth-of-type(2){
+            display: none;
         }
     </style>
 </head>
 <body>
-    <div>this is a div</div>
-    <div>this is a div</div>
-    <span>this is a span</span>
-    <span>this is a span</span>
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
 </html>
