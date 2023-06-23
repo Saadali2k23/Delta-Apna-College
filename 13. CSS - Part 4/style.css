@@ -1,3 +1,5 @@
+/* 
+alpha and opacity
 div{
     height: 200px;
     width: 200px;
@@ -8,4 +10,17 @@ div{
 #opacity{
     background-color: #ffa511;
     opacity: 0;
+} 
+*/
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #4dff00ff;
+    margin: auto;
+    transition: margin-top 1s ease-in-out 0s;
+}
+
+div:hover{
+    margin-top: 500px;
 }
