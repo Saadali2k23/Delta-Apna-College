@@ -1,0 +1,36 @@
+.smilley{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #ffa511;
+}
+.eyes{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.mouth{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    border-radius: 0 0 40px 40px ;
+    background-color: #ab3537;
+}
+
+/* placement  of divs */
+
+.e-1{
+    top: 100px;
+    left: 100px;
+}
+.e-2{
+    top: 100px;
+    left: 250px;
+}
+.mouth{
+    top: 250px;
+    left: 100px;
+}
