@@ -1,0 +1,8 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: inline-block;
+}
