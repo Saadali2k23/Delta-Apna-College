@@ -5,7 +5,8 @@
     margin: 10px auto;
     bottom: 2px solid black;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse ;
+    justify-content: flex-start;
 }
 
 h1{
