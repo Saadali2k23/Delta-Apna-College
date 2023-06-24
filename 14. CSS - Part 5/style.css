@@ -1,12 +1,13 @@
 #container{
     height: 300px;
-    width: 80%;
+    width: 1100px;
     background-color: azure;
     margin: 10px auto;
-    bottom: 2px solid black;
+    border: 2px solid black;
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: column-reverse ;
     justify-content: flex-start;
+    flex-wrap: wrap-reverse;
 }
 
 h1{
@@ -15,7 +16,7 @@ h1{
 
 #container div {
     height: 100px;
-    width: 100px;
+    width: 300px;
     color: white;
     text-align: center;
     font-size: 1.5em;
