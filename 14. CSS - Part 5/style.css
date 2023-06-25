@@ -9,6 +9,7 @@
     /* justify-content: flex-start; */
     flex-wrap: wrap;
     /* align-items: flex-start; */
+    align-content: baseline;
 }
 
 h1{
