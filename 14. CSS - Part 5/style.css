@@ -5,9 +5,10 @@
     margin: 10px auto;
     border: 2px solid black;
     display: flex;
-    flex-direction: column-reverse ;
-    justify-content: flex-start;
-    flex-wrap: wrap-reverse;
+    flex-direction: column ;
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
 }
 
 h1{
