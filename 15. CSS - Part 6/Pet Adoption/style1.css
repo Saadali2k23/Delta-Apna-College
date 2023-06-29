@@ -1,0 +1,32 @@
+h2 i{
+    color: #ffa510;
+}
+
+h1 span{
+    color: #926a34;
+}
+
+#pets{
+    display: flex;
+    justify-content: space-around;
+}
+
+#pets .card{
+    width: 400px;
+    border: solid 2px black;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 23px;
+}
+
+#pets .card img{
+    width: 95%;
+    border-radius: 23px;
+}
+
+h4{
+    color: green;
+    text-align: right ;
+}
