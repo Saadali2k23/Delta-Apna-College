@@ -28,3 +28,9 @@ h4 {
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width:375px) {
+  #pets{
+    flex-wrap: wrap;
+  }
+}
