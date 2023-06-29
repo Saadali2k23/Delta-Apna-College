@@ -1,0 +1,13 @@
+.container{
+    width: 500px;
+    height: 300px;background-color: azure;
+    background-color: black;
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: greenyellow;
+    border: solid 2px black;
+}
