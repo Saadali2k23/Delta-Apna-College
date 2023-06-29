@@ -1,13 +1,15 @@
 .container{
-    width: 500px;
+    width: 600px;
     height: 300px;background-color: azure;
-    background-color: black;
+    background-color: yellow;
     display: grid;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-columns:200px 200px 200px;
 }
 
 .item{
-    width: 100px;
-    height: 50px;
+    /* width: 100px;
+    height: 50px; */
     text-align: center;
     background-color: greenyellow;
     border: solid 2px black;
