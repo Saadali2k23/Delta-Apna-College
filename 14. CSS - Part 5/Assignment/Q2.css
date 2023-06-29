@@ -1,0 +1,16 @@
+.nav{
+    height: 50px;
+    border: solid 2px #53a0d4;
+    border-radius: 10px;
+    background-color: #eaba80;
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+}

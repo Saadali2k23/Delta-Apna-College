@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+.container{
+    transform: scale(2);
+    border: 2px #53a0d4 solid;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.box{
+    background: #686868;
+    color: #000;
+    font-size: 50px;
+    border: 2px #000 solid;
+    border-radius: 10px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px;
+}
