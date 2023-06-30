@@ -17,6 +17,7 @@
     position: absolute;
     left: 16px;
     line-height: 60px;
+    transition: .7s;
 }
 
 .btn_two{
@@ -26,19 +27,20 @@
     right: 10px;    
     top: 0px;
     line-height: 60px;
-    opacity: 0;
 }
 
 .sidebar_menu{
     position: fixed;
-    /* left: -350px; */
+    left: -350px;
     height: 100vh;
     width: 300px;
     background-color: rgba(255,255,255,.1);
     box-shadow: 0 0  6px rgba(255,255,255,1);
+    transition: linear .5s;
 }
 .sidebar_menu .logo{
     line-height: 60px;
+    height: 60px;
     width: 100%;
     box-shadow: 0 0  4px rgba(255,255,255,1);
     text-align: center;
@@ -95,9 +97,18 @@ a {
 .btn_one i,
 .btn_two i {
     font-size: 40px;
+    cursor: pointer;
 }
 
 .sidebar_menu .social_media i:hover{
     opacity: 1;
     transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one{
+    opacity: 0;
 }
