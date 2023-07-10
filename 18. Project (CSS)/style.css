@@ -21,9 +21,10 @@ a {
 }
 
 .sidebar {
-    background-color: #00ffbf;
+    background-color: #000000;
     width: 340px;
     border-radius: 1rem;
+    margin: .5rem;
 }
 
 .sidebar .nav,
@@ -111,4 +112,34 @@ a {
 }
 .icons i:hover{
     opacity: 1;
+}
+
+.lib-box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: .75rem;
+    margin:1.25rem  0;
+    padding: .75rem 1.25rem;
+}
+
+
+
+.lib-box .box-p1{
+    font-size: 1rem;    
+    font-weight: 500;
+}
+
+.lib-box .box-p2{
+    font-size: .75rem;
+    opacity: .9;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: .25rem 1rem ;
+    font-weight: 600;
+    height: 2rem;
+    width: fit-content;
 }
