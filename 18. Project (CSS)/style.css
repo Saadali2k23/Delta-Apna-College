@@ -88,10 +88,11 @@ a {
 
 
 .main-content {
-    background: linear-gradient(#3a3a3a, #000);
+    background: linear-gradient(#2b2b2b, #000);
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem ;
 }
 
 .music-player {
@@ -135,11 +136,112 @@ a {
 }
 
 .badge{
-    background-color: #fff;
+    background-color: #dadada;
+    color: #000;
     border: none;
     border-radius: 100px;
     padding: .25rem 1rem ;
     font-weight: 600;
-    height: 2rem;
+    height: 2.3rem;
     width: fit-content;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.badge:hover{
+    background-color: #fff;
+}
+.dark-badge{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.dark-badge:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: .75rem;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+
+.sticky-nav-icons{
+    margin-left: .75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-options button{
+    margin-right: 1rem; 
+}
+
+.card{
+    background-color: #1a1a1a;
+    width: 250px;
+    height: 320px;
+    border-radius: .5rem ;
+    padding: 1rem;
+    margin-right: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #232323;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 90%;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, .3);
+}
+
+.card-title{
+    margin: .5rem auto;
+}
+
+.card-info{
+    margin: auto;
+    margin: auto;
+    font-size: .8rem;
+    opacity: .8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer hr{
+    width: 80%;
+    color: #fff;
+    opacity: .5;
+}
+
+@media (max-width:1000px) {
+    .hide{
+        display: none;
+    }
 }
