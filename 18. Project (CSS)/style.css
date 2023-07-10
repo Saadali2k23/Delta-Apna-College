@@ -242,6 +242,8 @@ a {
 
 .music-player{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .album{
@@ -252,9 +254,32 @@ a {
     width: 50%;
 }
 
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .controls{
     width: 25%;
 }
+
+.player-control-icon{
+    width: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.big-icon{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
 
 @media (max-width:1000px) {
     .hide{
