@@ -23,6 +23,16 @@
 // b=a;
 // console.log(b);
 
-// comparison operator
-let age = 18;
-console.log(age<18);
+// // comparison operator
+// let age = 18;
+// console.log(age<18);
+
+// Conditional Statement
+console.log("before my if statement");
+
+let age = 23;
+if (age>=18) {
+    console.log("you can vote");
+}
+
+console.log("after my if statement");
