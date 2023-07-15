@@ -18,7 +18,11 @@
 // console.log(a++);
 // console.log(++a);
 // Assignment Operator
-let a=10;
-let b=20;
-b=a;
-console.log(b);
+// let a=10;
+// let b=20;
+// b=a;
+// console.log(b);
+
+// comparison operator
+let age = 18;
+console.log(age<18);
