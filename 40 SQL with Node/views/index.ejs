@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     Welcome to te Home page , there are <%= users %> users 
+    <br>
+    <form method="GET" action="/users/new">
+        <button>Add user</button>
+    </form>
 </body>
 </html>

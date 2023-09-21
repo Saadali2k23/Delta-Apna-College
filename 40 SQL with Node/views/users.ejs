@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form method="GET" action="/users/new">
+        <button>Add user</button>
+    </form>
+    <form method="POST" action="/users/addrandom">
+        <button>Add</button> 
+        <label for="number"></label>
+        <input type="number" value="1" min="0" id="number" name="no" style="width:30px;border: none;outline: none;">
+        <button>
+            Random Users
+        </button> 
+    </form>
     <table>
         <tr>
             <th>S. No.</th>
             <th>id</th>
             <th>email</th>
             <th>username</th>
+            <th></th>
             <th></th>
         </tr>
         <% let i=1 %>
@@ -25,6 +37,11 @@
             <td>
                 <form method="GET" action="/users/<%=user.id%>/edit">
                     <button>Edit Username</button>
+                </form>
+            </td>
+            <td>
+                <form method="POST" action="/users/<%=user.id%>?_method=DELETE">
+                    <button>DELETE</button>
                 </form>
             </td>
            </tr>

@@ -62,6 +62,20 @@ const getUsers = (connection) => {
     }
 }
 
+const DeleteSpecific = (connection,id) => {
+    try{
+        connection.query(
+            `DELETE FROM user where id='${id}'`,
+            (err,results)=>{
+                if(err) throw err;
+                console.log("record deleted successfully");
+            }
+        )
+    }catch(err){
+        console.log(err);
+    }
+}
+
 const Delete = (connection) => {
     try{
         connection.query(
@@ -90,5 +104,6 @@ module.exports = {
     insertMany,
     getUsers,
     Delete,
+    DeleteSpecific,
     updateUsername
 };

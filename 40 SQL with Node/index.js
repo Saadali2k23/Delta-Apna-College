@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const methodOverride = require('method-override')
+const { v4: uuidv4 } = require('uuid');
 
 app.use(express.urlencoded({extended:true}));
 app.set('view engine','ejs')
@@ -30,10 +31,35 @@ app.get("/", (req, res) => {
         database:"delta_app",
         password:"root"
     })
+
+    // const data = []
+    // for (let i=0;i<10;i++){
+    //     data.push(getRandomUser())
+    // }
+    // sql.Delete(connection)
+    // sql.insertMany(connection,data)
+    
     sql.runCommand(connection, "SELECT count(*) FROM USER", ( err,results) => {
         const users = `${results[0]['count(*)']}`
         res.render("index",{users});
     });
+});
+
+app.get("/users/new", (req, res) => {
+    res.render("new");
+});
+
+app.post("/users", (req, res) => {
+    const connection = mysql.createConnection({
+        host:"localhost",
+        user:"root",
+        database:"delta_app",
+        password:"root"
+    })
+    const user = req.body;
+    user.id = uuidv4()
+    sql.insert(connection,[user.id,user.username,user.email,user.password])
+    res.redirect("/users")
 });
 
 app.get("/users", (req, res) => {
@@ -56,6 +82,32 @@ app.get("/users", (req, res) => {
         });
         res.render("users",{users:results});
     });
+});
+
+app.post("/users/addrandom", (req, res) => {
+    const connection = mysql.createConnection({
+        host:"localhost",
+        user:"root",
+        database:"delta_app",
+        password:"root"
+    })
+    const data = []
+    for (let i=0;i<parseInt(req.body['no']);i++){
+        data.push(getRandomUser())
+    }
+    sql.insertMany(connection,data)
+    res.redirect('/users')
+});
+
+app.delete("/users/:id", (req, res) => {
+    const connection = mysql.createConnection({
+        host:"localhost",
+        user:"root",
+        database:"delta_app",
+        password:"root"
+    })
+    sql.DeleteSpecific(connection,req.params.id)
+    res.redirect("/users");
 });
 
 app.get("/users/:id/edit", (req, res) => {
