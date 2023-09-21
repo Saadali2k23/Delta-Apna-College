@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>S. No.</th>
+            <th>id</th>
+            <th>email</th>
+            <th>username</th>
+            <th></th>
+        </tr>
+        <% let i=1 %>
+        <% users.forEach(user=>{ %>
+           <tr>
+            <td><%= i++ %></td>
+            <td><%= user.id%></td>
+            <td><%= user.email%></td>
+            <td><%= user.username%></td>
+            <td>
+                <form method="GET" action="/users/<%=user.id%>/edit">
+                    <button>Edit Username</button>
+                </form>
+            </td>
+           </tr>
+        <% })%>
+    </table>
+</body>
+</html>

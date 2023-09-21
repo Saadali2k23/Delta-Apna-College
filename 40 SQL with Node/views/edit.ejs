@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <form method="POST" action="/users/<%=id%>?_method=PATCH">
+        <label for="password">Enter password</label>
+        <input type="text" id="password" name="password">
+        <label for="text">Enter new Username</label>
+        <input type="text" id="text" name="username">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width: 100%;
+}
+
+th,td{
+    border: solid 2px #000;
+    text-align: center;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
