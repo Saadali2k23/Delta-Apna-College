@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="messages">
+            <%messages.forEach((msg)=>{%>
+                <div class="<%= (msg.sentFrom == user) ? 'sent' : 'received' %>">
+                    <div class="footer">
+                        <form method="POST" action="/message/<%= msg.id %>?_method=DELETE" class="delete">
+                            <button>
+                                <img src="delete-message.png" alt="">
+                            </button>
+                        </form>
+                        <form method="GET" action="/message/<%= msg.id %>/edit" class="edit">
+                            <button>
+                                <img src="edit-message.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                   <div class="details">
+                        <div>
+                            Sent: <i><%= msg.sentFrom %> </i>
+                        </div>
+                        <div class="msg">
+                            <b><%= msg.message %></b>
+                        </div>
+                        <div>
+                            Recieved: <i><%= msg.sentTo %></i>
+                        </div>
+                   </div>
+                    <div class="footer">
+                        <div class="time">
+                            <%= msg.instance.toLocaleDateString() %>
+                            <br>
+                            <%= msg.instance.toLocaleTimeString() %> 
+                        </div>
+                    </div>
+                </div>
+                <br>
+            <%})%>
+        </div>
+    </div>
+    <div class="newMessage">
+        <form method="POST" action="/messages?_method=PATCH">
+            <input type="text" name="message" placeholder="Start Typin your message here">
+            <div class="userType">
+                <label for="sentFrom">Sent from:<label>
+                <select name="sentFrom" id="sentFrom">
+                    <option value="Pulkit">Pulkit</option>
+                    <option value="Elon Musk">Elon Musk</option>
+                </select>
+            </div>
+            <div class="userType">
+                <label for="sentTo">Sent to:<label>
+                <select name="sentTo" id="sentTo">
+                    <option value="Pulkit">Pulkit</option>
+                    <option value="Elon Musk" selected>Elon Musk</option>
+                </select>
+            </div>
+            <button>
+                <img src="send-message.png" alt="send">
+            </button>
+        </form>
+    </div>
+</body>
+</html>
+

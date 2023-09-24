@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    background-color: #a5a5a5;
+}
+
+.container{
+    padding: 1em 15em;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.edit,
+.delete{
+    display: inline-flex;
+    margin: 0 .3em ;
+}
+
+
+.edit button,
+.delete button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.edit img,
+.delete img{
+    background-color: #fff;
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.messages .sent,
+.messages .received{
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    border-radius: 1em;
+    padding: 1.3em;
+    width: 500px;
+}
+
+.messages .sent{
+    align-self: flex-end;
+    background-color: rgb(0, 64, 83);
+}
+
+.msg{
+    margin: .5em 0;
+    font-size: 1.5em;
+}
+
+.time{
+    display: inline;
+    color: greenyellow;
+}
+
+.newMessage form{
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(20,fr);
+    grid-template-rows: repeat(1,fr);
+    background-color: rgb(255, 238, 0);
+}
+
+.newMessage .userType:nth-of-type(1){
+    grid-column: 18/19;
+}
+
+.newMessage .userType:nth-of-type(2){
+    grid-column: 19/20;
+}
+
+.newMessage .userType{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 255, 123);
+    font-size: 2em;
+    border-left: solid 5px #000000;
+}
+
+.newMessage .userType select ,
+.newMessage .userType select option{
+    font-size: 1em;
+}
+
+.newMessage input{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/18;
+    height: 2em;
+    background-color: rgb(123, 251, 255);
+    border: none;
+    outline: none;
+    padding: 0 .3em;
+}
+
+.newMessage input:active{
+    outline: none;
+}
+
+.newMessage button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 20/21;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-left: solid 5px #000000;
+}
+
+.newMessage button img{
+    width: 2em;
+}
+
+.msg b form input{
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.msg b form button{
+    margin-top: .5em;
+    font-size: 1em;
+}

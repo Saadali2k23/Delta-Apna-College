@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit a message</title>
+    <link rel="stylesheet" href="http://localhost:3001/style.css">
+</head>
+<body>
+    <img src="edit-message.png" alt="">
+   <div class="container">
+    <div class="messages">
+        <div class="<%= (msg.sentFrom == user) ? 'sent' : 'received' %>">
+            <div class="details">
+                <div>
+                    Sent: <i><%= msg.sentFrom %> </i>
+                </div>
+                <div class="msg">
+                    <b>
+                        <form method="POST" action="/message/<%= msg.id %>?_method=PATCH" >
+                            <input type="text" name="msg" value="<%= msg.message %>" >
+                            <button>Edit</button>
+                        </form>
+                    </b>
+                </div>
+                <div>
+                    Recieved: <i><%= msg.sentTo %></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
+
