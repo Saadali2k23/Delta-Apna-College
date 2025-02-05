@@ -98,3 +98,16 @@ form button.submit{
     border: none;
     display: inline;
 }
+@media(max-width:845px){
+    body{
+        font-size: 16px;
+    }
+    .fix{
+        position:relative;
+    }
+    .new{
+        position: sticky;
+        top: 1rem;
+        right: 1rem;
+    }
+}
